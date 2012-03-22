@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/fat_free_crm.git
-  revision: 254f7c126d19349b1f863a85747afc5cab7cfaad
+  revision: 43bc5d56344c357260098282076397253b2b746f
   branch: activities
   specs:
     fat_free_crm (0.11.0)
@@ -71,7 +71,7 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/ffcrm_crowd.git
-  revision: 0fd4cd94afa9fe094536783006808d343be45002
+  revision: 56886be4e8d56ebb32d170ed77a81859cfc4aab1
   specs:
     ffcrm_crowd (1.0.1)
       fat_free_crm
@@ -234,7 +234,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.17.2)
+    mime-types (1.18)
     multi_json (1.1.0)
     multi_xml (0.4.2)
     nestful (0.0.8)
