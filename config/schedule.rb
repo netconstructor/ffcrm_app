@@ -6,8 +6,8 @@ env :MAILTO, 'itdept@crossroads.org.hk'
 formstack_start, dropbox_start, comments_start = (environment == 'staging') ? [5, 3, 0] : [7, 5, 2]
 
 # Turns (3) into "3,13,23,33,43,53"
-def start_min_to_string(start)
-  ((start)..(start + 50)).step(10).to_a.join(',')
+def start_min_to_string(start, interval = 10)
+  ((start)..(start + 50)).step(interval).to_a.join(',')
 end
 
 job_type :rake, "cd :path > /dev/null && RAILS_ENV=:environment bundle exec rake :task --silent :output"
@@ -27,7 +27,7 @@ unless environment == 'staging'
 end
 
 #TODO Comments Inbox currently deletes emails on staging too...
-every "#{start_min_to_string(comments_start)} 7-23 * * *" do
+every "#{start_min_to_string(comments_start, 4)} * * * *" do
   # Email dropbox
   rake "ffcrm:comment_inbox:run", :output => {:standard => "log/comment_inbox_cron.log"}
 end
