@@ -1,10 +1,104 @@
 GIT
+  remote: git://github.com/crossroads/crowd.git
+  revision: 3b0da25cf2d57ac6e5633b5e601538eb1291c98c
+  specs:
+    crowd-crossroads (0.5.12)
+
+GIT
+  remote: git://github.com/crossroads/crowd_rails.git
+  revision: 371f57ee567bec9acfafc6e05b4bf25de568936e
+  specs:
+    crowd_rails (0.5.11)
+
+GIT
+  remote: git://github.com/crossroads/ffcrm_crossroads_formstack.git
+  revision: 3c16e278adec172ef6f37621b0a581e1b14596d4
+  branch: gem
+  specs:
+    ffcrm_crossroads_formstack (1.0.1)
+      fat_free_crm
+      formstack
+
+GIT
+  remote: git://github.com/crossroads/ffcrm_meta_search.git
+  revision: a194ac04b2b21150615b96824b82e5259074a74d
+  branch: gem
+  specs:
+    ffcrm_meta_search (1.0.1)
+      fat_free_crm
+
+GIT
+  remote: git://github.com/crossroads/mingle4r.git
+  revision: 1eb1401035f2089d4a9cd6e8e716f02cc59e0bfe
+  specs:
+    mingle4r (0.4.8)
+      activeresource
+
+GIT
   remote: git://github.com/fatfreecrm/chosen-rails.git
   revision: 33c92a8554ee14d11b7293eb531371a05c0a0b67
   specs:
     chosen-rails (0.9.5)
       railties (~> 3.0)
       thor (~> 0.14)
+
+GIT
+  remote: git://github.com/fatfreecrm/fat_free_crm.git
+  revision: 254f7c126d19349b1f863a85747afc5cab7cfaad
+  branch: activities
+  specs:
+    fat_free_crm (0.11.0)
+      acts-as-taggable-on (~> 2.2.1)
+      acts_as_commentable (~> 3.0.1)
+      acts_as_list (~> 0.1.4)
+      ajax-chosen-rails (>= 0.1.5)
+      authlogic (~> 3.1.0)
+      chosen-rails
+      dynamic_form
+      ffaker (>= 1.12.0)
+      haml (~> 3.1.3)
+      jquery-rails
+      paper_trail
+      paperclip (~> 2.7.0)
+      prototype-rails
+      rails (~> 3.2.2)
+      ransack
+      responds_to_parent
+      sass (~> 3.1.15)
+      simple_form (~> 2.0.1)
+      uglifier
+      will_paginate (~> 3.0.2)
+
+GIT
+  remote: git://github.com/fatfreecrm/ffcrm_crowd.git
+  revision: 0fd4cd94afa9fe094536783006808d343be45002
+  specs:
+    ffcrm_crowd (1.0.1)
+      fat_free_crm
+
+GIT
+  remote: git://github.com/fatfreecrm/ffcrm_merge.git
+  revision: 45d0cd477e2f57a564dd1d2c0fe00a7032329dd4
+  specs:
+    ffcrm_merge (1.2)
+      fat_free_crm
+
+GIT
+  remote: git://github.com/fatfreecrm/ffcrm_mingle.git
+  revision: 929375b01cf7929ea95e2f0e5251c4aab0bf1433
+  specs:
+    ffcrm_mingle (1.0.1)
+      fat_free_crm
+      mingle4r
+
+GIT
+  remote: git://github.com/fatfreecrm/ffcrm_service_hooks.git
+  revision: a86cc8a094d1648858560f0900e8e2a8cfe9bcd1
+  specs:
+    ffcrm_service_hooks (1.0.1)
+      fat_free_crm
+      ffcrm_merge
+      nestful
 
 GIT
   remote: git://github.com/fatfreecrm/ransack.git
@@ -15,6 +109,21 @@ GIT
       activerecord (~> 3.0)
       chronic (~> 0.6.7)
       polyamorous (~> 0.5.0)
+
+GIT
+  remote: git://github.com/tribalvibes/soap4r-spox.git
+  revision: 7e3cb897d7c0f5a0bc47fe6976610348cbd1f80a
+  specs:
+    soap4r (1.5.8.5)
+      httpclient (>= 2.1.1)
+
+GIT
+  remote: git@bitbucket.org:crossroadsIT/ffcrm_crossroads.git
+  revision: c3d1c8ea90642d8760230e6a47eee68629c97d52
+  branch: gem
+  specs:
+    ffcrm_crossroads (1.0.1)
+      fat_free_crm
 
 GIT
   remote: https://github.com/LessonPlanet/responds_to_parent.git
@@ -66,6 +175,15 @@ GEM
       activerecord (>= 3.0.7)
       activerecord (>= 3.0.7)
     builder (3.0.0)
+    capistrano (2.11.2)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
+    capistrano-ext (1.2.1)
+      capistrano (>= 1.0.0)
+    capistrano_colors (0.5.5)
     chronic (0.6.7)
     cocaine (0.2.1)
     coffee-rails (3.2.2)
@@ -76,31 +194,30 @@ GEM
       execjs
     coffee-script-source (1.2.0)
     columnize (0.3.6)
+    crossroads_capistrano (1.4.38)
+      capistrano (>= 2.6.0)
+      capistrano-ext (>= 1.2.1)
+      capistrano_colors (>= 0.5.4)
+      rvm (>= 1.6.9)
+    dynamic_form (1.1.4)
     erubis (2.7.0)
     execjs (1.3.0)
       multi_json (~> 1.0)
-    fat_free_crm (0.11.0)
-      acts-as-taggable-on (~> 2.2.1)
-      acts_as_commentable (~> 3.0.1)
-      acts_as_list (~> 0.1.4)
-      ajax-chosen-rails (>= 0.1.5)
-      authlogic (~> 3.1.0)
-      chosen-rails
-      ffaker (>= 1.12.0)
-      haml (~> 3.1.3)
-      jquery-rails
-      paper_trail
-      paperclip (~> 2.5.2)
-      prototype-rails
-      rails (~> 3.2.2)
-      ransack
-      sass (~> 3.1.15)
-      simple_form (~> 1.5.2)
-      uglifier
-      will_paginate (~> 3.0.2)
     ffaker (1.13.0)
+    formstack (0.0.1)
+      hashie (>= 0.1.3)
+      httparty (>= 0.1.0)
     haml (3.1.4)
+    hashie (1.2.0)
+    highline (1.6.11)
     hike (1.2.1)
+    hoptoad_notifier (2.4.11)
+      activesupport
+      builder
+    httparty (0.8.1)
+      multi_json
+      multi_xml
+    httpclient (2.2.4)
     i18n (0.6.0)
     journey (1.0.3)
     jquery-rails (2.0.1)
@@ -113,15 +230,26 @@ GEM
       rbx-require-relative (> 0.0.4)
     linecache19 (0.5.13)
       ruby_core_source (>= 0.1.4)
-    mail (2.4.3)
+    mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.1.0)
-    paper_trail (2.6.0)
+    multi_xml (0.4.2)
+    nestful (0.0.8)
+      activesupport (>= 3.0.0.beta)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.0.5)
+      net-ssh (>= 2.0.9)
+    net-ssh (2.3.0)
+    net-ssh-gateway (1.1.0)
+      net-ssh (>= 1.99.1)
+    newrelic_rpm (3.3.0)
+    paper_trail (2.6.2)
       rails (~> 3)
-    paperclip (2.5.2)
+    paperclip (2.7.0)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
       cocaine (>= 0.0.2)
@@ -174,12 +302,13 @@ GEM
       ruby-debug-base19 (>= 0.11.19)
     ruby_core_source (0.1.5)
       archive-tar-minitar (>= 0.5.2)
+    rvm (1.9.2)
     sass (3.1.15)
     sass-rails (3.2.4)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    simple_form (1.5.2)
+    simple_form (2.0.1)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
     sprockets (2.1.2)
@@ -201,6 +330,9 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    whenever (0.7.3)
+      activesupport (>= 2.3.4)
+      chronic (~> 0.6.3)
     will_paginate (3.0.3)
 
 PLATFORMS
@@ -209,13 +341,29 @@ PLATFORMS
 DEPENDENCIES
   chosen-rails!
   coffee-rails (~> 3.2.1)
-  fat_free_crm
+  crossroads_capistrano (= 1.4.38)
+  crowd-crossroads!
+  crowd_rails!
+  fat_free_crm!
+  ffcrm_crossroads!
+  ffcrm_crossroads_formstack!
+  ffcrm_crowd!
+  ffcrm_merge!
+  ffcrm_meta_search!
+  ffcrm_mingle!
+  ffcrm_service_hooks!
+  formstack (= 0.0.1)
+  hoptoad_notifier
+  mingle4r!
+  newrelic_rpm (= 3.3.0)
   pg (~> 0.12.2)
   ransack!
   responds_to_parent!
   ruby-debug
   ruby-debug19
   sass-rails (~> 3.2.3)
+  soap4r!
   therubyracer
   uglifier (>= 1.0.3)
   unicorn
+  whenever (~> 0.7.0)

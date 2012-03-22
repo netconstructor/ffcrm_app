@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 require File.expand_path('../lib/bundler/gem_development', __FILE__)
 Bundler.development_gems = ['fat_free_crm', /^ffcrm_/]
 
-gem 'fat_free_crm'
+gem 'fat_free_crm', :git => 'git://github.com/fatfreecrm/fat_free_crm.git', :branch => 'activities'
 
 gem 'ransack',      :git => "git://github.com/fatfreecrm/ransack.git"
 gem 'chosen-rails', :git => "git://github.com/fatfreecrm/chosen-rails.git"
@@ -33,3 +33,33 @@ group :development, :test do
   gem 'ruby-debug19', :platform => :mri_19, :require => 'ruby-debug'
 end
 
+
+# Gems used by Crossroads
+#------------------------
+
+gem 'mingle4r',            :git => 'git://github.com/crossroads/mingle4r.git'
+gem 'ffcrm_mingle',        :git => 'git://github.com/fatfreecrm/ffcrm_mingle.git'
+
+gem 'ffcrm_merge',         :git => 'git://github.com/fatfreecrm/ffcrm_merge.git'
+gem 'ffcrm_service_hooks', :git => 'git://github.com/fatfreecrm/ffcrm_service_hooks.git'
+
+gem 'formstack', '0.0.1'
+gem 'ffcrm_crossroads',    :git => 'git@bitbucket.org:crossroadsIT/ffcrm_crossroads.git', :branch => 'gem'
+gem 'ffcrm_crossroads_formstack', :git => 'git://github.com/crossroads/ffcrm_crossroads_formstack.git', :branch => 'gem'
+
+gem 'ffcrm_meta_search',   :git => 'git://github.com/crossroads/ffcrm_meta_search.git', :branch => 'gem'
+
+gem 'hoptoad_notifier'
+gem 'whenever', '~> 0.7.0'
+gem 'crossroads_capistrano', '1.4.38', :group => :development
+
+group :production do
+  gem 'newrelic_rpm', '3.3.0'
+end
+
+group :production, :staging do
+  gem 'soap4r',            :git => 'git://github.com/tribalvibes/soap4r-spox.git'
+  gem 'crowd-crossroads',  :git => 'git://github.com/crossroads/crowd.git'
+  gem 'crowd_rails',       :git => 'git://github.com/crossroads/crowd_rails.git'
+  gem 'ffcrm_crowd',       :git => 'git://github.com/fatfreecrm/ffcrm_crowd.git'
+end
