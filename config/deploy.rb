@@ -9,19 +9,19 @@ load_crossroads_recipes %w(stack rvm passenger postgresql newrelic hoptoad
                            log delayed_job whenever revisions)
 load 'deploy/assets'
 
-set :application,           "ffcrm"
-set :domain,                "crossroadsint.org"
-set :repository,            "git://github.com/crossroads/ffcrm_app.git"
-set :rvm_ruby_string,       "ruby-1.9.2-p290"
-set :passenger_version,     "3.0.9"
-set :yum_packages, %w(ImageMagick-devel libxml2 libxml2-devel libxslt libxslt-devel)
-set :default_stage, "staging"
+set :application,        "ffcrm"
+set :domain,             "crossroadsint.org"
+set :repository,         "git://github.com/crossroads/ffcrm_app.git"
+set :rvm_ruby_string,    "ruby-1.9.3-p125"
+set :passenger_version,  "3.0.11"
+set :yum_packages,       %w(ImageMagick-devel libxml2 libxml2-devel libxslt libxslt-devel)
+set :default_stage,      "staging"
 set :normalize_asset_timestamps, false
 
-after  "shared:setup",          "ffcrm:shared:setup"
-before "deploy:symlink",        "ffcrm:shared:symlink"
-before "deploy:symlink",        "dropbox:create_log"
-after  "ffcrm:setup",             "ffcrm:crossroads:seed"
+after  "shared:setup",   "ffcrm:shared:setup"
+before "deploy:symlink", "ffcrm:shared:symlink"
+before "deploy:symlink", "dropbox:create_log"
+after  "ffcrm:setup",    "ffcrm:crossroads:seed"
 
 namespace :ffcrm do
   namespace :shared do
