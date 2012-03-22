@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 require File.expand_path('../lib/bundler/gem_development', __FILE__)
-Bundler.development_gems = ['fat_free_crm', /^ffcrm_/]
+Bundler.development_gems = ['fat_free_crm', /^ffcrm_/, 'crossroads_capistrano']
 
 gem 'fat_free_crm', :git => 'git://github.com/fatfreecrm/fat_free_crm.git', :branch => 'activities'
 
