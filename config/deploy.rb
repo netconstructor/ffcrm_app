@@ -23,8 +23,6 @@ before "deploy:symlink", "ffcrm:shared:symlink"
 before "deploy:symlink", "dropbox:create_log"
 after  "ffcrm:setup",    "ffcrm:crossroads:seed"
 
-after "deploy:create_symlink",  "mailman:restart"
-
 namespace :ffcrm do
   namespace :shared do
     desc "Setup shared directory"
@@ -89,24 +87,22 @@ namespace :dropbox do
     run "if [ ! -f #{shared_path}/log/dropbox.log ]; then sudo -p 'sudo password: ' touch #{shared_path}/log/dropbox.log; fi"
   end
 
-  desc "Run the dropbox task"
+  desc "Run the dropbox crawler"
   task :default do
     run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake ffcrm:dropbox:run"
   end
 end
 
-namespace :formstack do
-  desc "Run the formstack task"
+namespace :comment_inbox do
+  desc "Run the comment inbox crawler"
   task :default do
-    run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake ffcrm:crossroads:formstack:pull"
+    run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake ffcrm:comment_inbox:run"
   end
 end
 
-namespace :mailman do
-  [:start, :stop, :restart].each do |action|
-    desc "#{action} Mailman"
-    task action, :roles => [:app] do
-      run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec ./script/mailman_daemon #{action}"
-    end
+namespace :formstack do
+  desc "Run the formstack crawler"
+  task :default do
+    run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake ffcrm:crossroads:formstack:pull"
   end
 end
