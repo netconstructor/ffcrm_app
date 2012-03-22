@@ -132,7 +132,7 @@ GIT
 
 GIT
   remote: git@bitbucket.org:crossroadsIT/ffcrm_crossroads.git
-  revision: 9c36014767a3984f934ab2678e5bb15bd341756e
+  revision: c3d1c8ea90642d8760230e6a47eee68629c97d52
   branch: gem
   specs:
     ffcrm_crossroads (1.0.1)
