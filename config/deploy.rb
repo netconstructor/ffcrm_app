@@ -23,7 +23,7 @@ before "deploy:symlink", "ffcrm:shared:symlink"
 before "deploy:symlink", "dropbox:create_log"
 after  "ffcrm:setup",    "ffcrm:crossroads:seed"
 
-after "deploy:symlink",  "mailman:restart"
+after "deploy:create_symlink",  "mailman:restart"
 
 namespace :ffcrm do
   namespace :shared do
@@ -106,7 +106,7 @@ namespace :mailman do
   [:start, :stop, :restart].each do |action|
     desc "#{action} Mailman"
     task action, :roles => [:app] do
-      run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec script/mailman_daemon #{action}"
+      run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec ./script/mailman_daemon #{action}"
     end
   end
 end
