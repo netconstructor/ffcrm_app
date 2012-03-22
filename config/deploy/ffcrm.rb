@@ -7,7 +7,7 @@ set :rails_env, "staging"
 
 server ip_address, :app, :web, :db, :primary => true
 
-set :deploy_to, "/opt/rails/#{application}-#{stage}"
+set :deploy_to, "/opt/rails/#{application}-staging"
 
 set :branch, (ENV['branch'] || "master")
 
