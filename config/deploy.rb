@@ -23,6 +23,10 @@ before "deploy:symlink", "ffcrm:shared:symlink"
 before "deploy:symlink", "dropbox:create_log"
 after  "ffcrm:setup",    "ffcrm:crossroads:seed"
 
+after "deploy:update_code", "mailman:stop"
+after "deploy:symlink",     "mailman:start"
+after "deploy:rollback",    "mailman:start"
+
 namespace :ffcrm do
   namespace :shared do
     desc "Setup shared directory"
