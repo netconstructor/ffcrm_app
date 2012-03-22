@@ -3,11 +3,12 @@ source 'https://rubygems.org'
 require File.expand_path('../lib/bundler/gem_development', __FILE__)
 Bundler.development_gems = ['fat_free_crm', /^ffcrm_/, 'crossroads_capistrano']
 
-gem 'fat_free_crm', :git => 'git://github.com/fatfreecrm/fat_free_crm.git', :branch => 'activities'
+gem 'fat_free_crm', :git => 'git://github.com/fatfreecrm/fat_free_crm.git', :branch => 'notifications'
 
 gem 'ransack',      :git => "git://github.com/fatfreecrm/ransack.git"
 gem 'chosen-rails', :git => "git://github.com/fatfreecrm/chosen-rails.git"
 gem 'responds_to_parent', :git => "https://github.com/LessonPlanet/responds_to_parent.git"
+gem 'mailman',      :git => "git://github.com/fatfreecrm/mailman.git", :require => false
 
 # Uncomment the database that you have configured in config/database.yml
 # ----------------------------------------------------------------------

@@ -44,8 +44,8 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/fat_free_crm.git
-  revision: 8c75c8f1637d877e56f4efabfc23f490e05b0874
-  branch: activities
+  revision: 7ac1f1ed298c6f73cc0b4549d985ba79fd63c438
+  branch: notifications
   specs:
     fat_free_crm (0.11.0)
       acts-as-taggable-on (~> 2.2.1)
@@ -54,15 +54,17 @@ GIT
       ajax-chosen-rails (>= 0.1.5)
       authlogic (~> 3.1.0)
       chosen-rails
+      daemons
       dynamic_form
       ffaker (>= 1.12.0)
       haml (~> 3.1.3)
       jquery-rails
+      mailman
       paper_trail
       paperclip (~> 2.7.0)
       prototype-rails
       rails (~> 3.2.2)
-      ransack
+      ransack (~> 0.6.0)
       responds_to_parent
       sass (~> 3.1.15)
       simple_form (~> 2.0.1)
@@ -99,6 +101,17 @@ GIT
       fat_free_crm
       ffcrm_merge
       nestful
+
+GIT
+  remote: git://github.com/fatfreecrm/mailman.git
+  revision: d83c3aa24f5ebd6d3b67062cede0eac73fba4033
+  specs:
+    mailman (0.4.0)
+      activesupport (>= 2.3.4)
+      fssm (>= 0.1.4)
+      i18n (>= 0.4.1)
+      mail (>= 2.0.3)
+      maildir (>= 0.5.0)
 
 GIT
   remote: git://github.com/fatfreecrm/ransack.git
@@ -199,6 +212,7 @@ GEM
       capistrano-ext (>= 1.2.1)
       capistrano_colors (>= 0.5.4)
       rvm (>= 1.6.9)
+    daemons (1.1.8)
     dynamic_form (1.1.4)
     erubis (2.7.0)
     execjs (1.3.0)
@@ -207,6 +221,7 @@ GEM
     formstack (0.0.1)
       hashie (>= 0.1.3)
       httparty (>= 0.1.0)
+    fssm (0.2.8.1)
     haml (3.1.4)
     hashie (1.2.0)
     highline (1.6.11)
@@ -234,6 +249,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    maildir (2.0.0)
     mime-types (1.18)
     multi_json (1.1.0)
     multi_xml (0.4.2)
@@ -354,6 +370,7 @@ DEPENDENCIES
   ffcrm_service_hooks!
   formstack (= 0.0.1)
   hoptoad_notifier
+  mailman!
   mingle4r!
   newrelic_rpm (= 3.3.0)
   pg (~> 0.12.2)
