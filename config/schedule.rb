@@ -7,7 +7,7 @@ formstack_start, dropbox_start, comments_start = (environment == 'staging') ? [5
 
 # Turns (3) into "3,13,23,33,43,53"
 def start_min_to_string(start, interval = 10)
-  ((start)..(start + 50)).step(interval).to_a.join(',')
+  ((start)..(start + 60)).step(interval).to_a.reject{|i| i > 59 }.join(',')
 end
 
 job_type :rake, "cd :path > /dev/null && RAILS_ENV=:environment bundle exec rake :task --silent :output"
