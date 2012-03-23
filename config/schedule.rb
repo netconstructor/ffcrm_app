@@ -29,9 +29,9 @@ unless environment == 'staging'
 end
 
 
-#TODO Comments Inbox currently deletes emails on staging too...
+#TODO Comments Replies Inbox currently deletes emails on staging too...
 every "#{start_min_to_string(comments_start, 4)} * * * *" do
-  # Email dropbox
-  rake "ffcrm:comment_inbox:run", :output => {:standard => "log/comment_inbox_cron.log"}
+  # Comments Replies Inbox
+  rake "ffcrm:comment_replies:run", :output => {:standard => "log/comment_replies_cron.log"}
 end
 

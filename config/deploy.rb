@@ -93,7 +93,7 @@ namespace :dropbox do
   end
 end
 
-namespace :comment_inbox do
+namespace :comment_replies do
   desc "Run the comment inbox crawler"
   task :default do
     run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake ffcrm:comment_inbox:run"
