@@ -101,17 +101,6 @@ GIT
       nestful
 
 GIT
-  remote: git://github.com/fatfreecrm/mailman.git
-  revision: 7fe14bde5f7ac3ab3934813b4d27aa73bdf0ebca
-  specs:
-    mailman (0.4.0)
-      activesupport (>= 2.3.4)
-      fssm (>= 0.1.4)
-      i18n (>= 0.4.1)
-      mail (>= 2.0.3)
-      maildir (>= 0.5.0)
-
-GIT
   remote: git://github.com/fatfreecrm/ransack.git
   revision: 92f5812d4320e5f1959f844d19d0386bb5654a08
   specs:
@@ -218,7 +207,6 @@ GEM
     formstack (0.0.1)
       hashie (>= 0.1.3)
       httparty (>= 0.1.0)
-    fssm (0.2.8.1)
     haml (3.1.4)
     hashie (1.2.0)
     highline (1.6.11)
@@ -246,7 +234,6 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    maildir (2.0.0)
     mime-types (1.18)
     multi_json (1.1.0)
     multi_xml (0.4.2)
@@ -367,7 +354,6 @@ DEPENDENCIES
   ffcrm_service_hooks!
   formstack (= 0.0.1)
   hoptoad_notifier
-  mailman!
   mingle4r!
   newrelic_rpm (= 3.3.0)
   pg (~> 0.12.2)

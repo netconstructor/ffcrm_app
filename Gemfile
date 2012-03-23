@@ -8,7 +8,6 @@ gem 'fat_free_crm', :git => 'git://github.com/fatfreecrm/fat_free_crm.git', :bra
 gem 'ransack',      :git => "git://github.com/fatfreecrm/ransack.git"
 gem 'chosen-rails', :git => "git://github.com/fatfreecrm/chosen-rails.git"
 gem 'responds_to_parent', :git => "https://github.com/LessonPlanet/responds_to_parent.git"
-gem 'mailman',      :git => "git://github.com/fatfreecrm/mailman.git", :require => false
 
 # Uncomment the database that you have configured in config/database.yml
 # ----------------------------------------------------------------------
