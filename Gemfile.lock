@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/fat_free_crm.git
-  revision: 15ae5e6768c901d692dce4dcf86d98c081f2301f
+  revision: bbeee7670ba128b0257ea8e8cb3760efc6767e93
   branch: notifications
   specs:
     fat_free_crm (0.11.0)
@@ -55,6 +55,7 @@ GIT
       authlogic (~> 3.1.0)
       chosen-rails
       dynamic_form
+      email_reply_parser
       ffaker (>= 1.12.0)
       haml (~> 3.1.3)
       jquery-rails
@@ -200,6 +201,7 @@ GEM
       capistrano_colors (>= 0.5.4)
       rvm (>= 1.6.9)
     dynamic_form (1.1.4)
+    email_reply_parser (0.5.0)
     erubis (2.7.0)
     execjs (1.3.0)
       multi_json (~> 1.0)
