@@ -12,10 +12,12 @@ end
 
 job_type :rake, "cd :path > /dev/null && RAILS_ENV=:environment bundle exec rake :task --silent :output"
 
-# The following :output conf prints STDERR (and receive emails from cron), and saves STDOUT to log
-every "#{start_min_to_string(formstack_start)} 7-23 * * *" do
-  # Formstack submissions
-  rake "ffcrm:crossroads:formstack:pull", :output => {:standard => "log/formstack_cron.log"}
+unless environment == 'staging'
+  # The following :output conf prints STDERR (and receive emails from cron), and saves STDOUT to log
+  every "#{start_min_to_string(formstack_start)} 7-23 * * *" do
+    # Formstack submissions
+    rake "ffcrm:crossroads:formstack:pull", :output => {:standard => "log/formstack_cron.log"}
+  end
 end
 
 #TODO Dropbox currently deletes emails on staging too...
@@ -25,6 +27,7 @@ unless environment == 'staging'
     rake "ffcrm:dropbox:run", :output => {:standard => "log/dropbox_cron.log"}
   end
 end
+
 
 #TODO Comments Inbox currently deletes emails on staging too...
 every "#{start_min_to_string(comments_start, 4)} * * * *" do
