@@ -176,7 +176,7 @@ GEM
       activerecord (>= 3.0.7)
       activerecord (>= 3.0.7)
     builder (3.0.0)
-    bundler_local_development (0.0.1)
+    bundler_local_development (0.1.0)
       bundler
     capistrano (2.11.2)
       highline
