@@ -30,7 +30,7 @@ end
 
 
 #TODO Comments Replies Inbox currently deletes emails on staging too...
-every "#{start_min_to_string(comments_start, 4)} * * * *" do
+every "#{start_min_to_string(comments_start, 2)} * * * *" do
   # Comments Replies Inbox
   rake "ffcrm:comment_replies:run", :output => {:standard => "log/comment_replies_cron.log"}
 end
