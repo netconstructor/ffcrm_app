@@ -176,6 +176,8 @@ GEM
       activerecord (>= 3.0.7)
       activerecord (>= 3.0.7)
     builder (3.0.0)
+    bundler_local_development (0.0.1)
+      bundler
     capistrano (2.11.2)
       highline
       net-scp (>= 1.0.0)
@@ -341,6 +343,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler_local_development
   chosen-rails!
   coffee-rails (~> 3.2.1)
   crossroads_capistrano (= 1.4.38)
