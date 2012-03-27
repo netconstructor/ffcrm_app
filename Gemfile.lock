@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/fat_free_crm.git
-  revision: e404f83a2026cc8173803f555ff0f7ea7609ac73
+  revision: 4e43aeb0462a87bdacfb38c2dcfa6dc27f736fd1
   branch: notifications
   specs:
     fat_free_crm (0.11.0)
@@ -86,7 +86,7 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/ffcrm_mingle.git
-  revision: 929375b01cf7929ea95e2f0e5251c4aab0bf1433
+  revision: 1d7878e24737d30a162285c5c5a0f48428df8a64
   specs:
     ffcrm_mingle (1.0.1)
       fat_free_crm
@@ -94,7 +94,7 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/ffcrm_service_hooks.git
-  revision: a86cc8a094d1648858560f0900e8e2a8cfe9bcd1
+  revision: 7a4a589438a61b6e6ff8e37a51ada02ea1a7af0b
   specs:
     ffcrm_service_hooks (1.0.1)
       fat_free_crm
