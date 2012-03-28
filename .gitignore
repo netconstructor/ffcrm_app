@@ -17,3 +17,5 @@
 /config/database.yml
 /config/crowd_settings.yml
 /config/settings.yml
+
+/public/avatars
