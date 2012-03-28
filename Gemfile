@@ -55,7 +55,7 @@ gem 'ffcrm_meta_search',   :git => 'git://github.com/crossroads/ffcrm_meta_searc
 
 gem 'hoptoad_notifier'
 gem 'whenever', '~> 0.7.0'
-gem 'crossroads_capistrano', '1.4.38', :group => :development
+gem 'crossroads_capistrano', '1.4.42', :group => :development
 
 group :production do
   gem 'newrelic_rpm', '3.3.0'

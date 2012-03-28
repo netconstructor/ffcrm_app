@@ -199,11 +199,11 @@ GEM
       execjs
     coffee-script-source (1.2.0)
     columnize (0.3.6)
-    crossroads_capistrano (1.4.38)
+    crossroads_capistrano (1.4.42)
       capistrano (>= 2.6.0)
       capistrano-ext (>= 1.2.1)
       capistrano_colors (>= 0.5.4)
-      rvm (>= 1.6.9)
+      rvm-capistrano (>= 1.0.1)
     dynamic_form (1.1.4)
     email_reply_parser (0.5.0)
     erubis (2.7.0)
@@ -309,7 +309,8 @@ GEM
       ruby-debug-base19 (>= 0.11.19)
     ruby_core_source (0.1.5)
       archive-tar-minitar (>= 0.5.2)
-    rvm (1.11.3.2)
+    rvm-capistrano (1.0.1)
+      capistrano (>= 2.0.0)
     sass (3.1.15)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -349,7 +350,7 @@ DEPENDENCIES
   bundler_local_development
   chosen-rails!
   coffee-rails (~> 3.2.1)
-  crossroads_capistrano (= 1.4.38)
+  crossroads_capistrano (= 1.4.42)
   crowd-crossroads!
   crowd_rails!
   fat_free_crm!
