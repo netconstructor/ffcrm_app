@@ -80,7 +80,7 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/ffcrm_merge.git
-  revision: 45d0cd477e2f57a564dd1d2c0fe00a7032329dd4
+  revision: fb78a42514df21f52f8e4aaaa9c378057f6d0d53
   specs:
     ffcrm_merge (1.2)
       fat_free_crm
