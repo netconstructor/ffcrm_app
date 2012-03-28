@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: git://github.com/crossroads/ffcrm_meta_search.git
-  revision: a194ac04b2b21150615b96824b82e5259074a74d
+  revision: deab0fedef6b5a4556f6bbeb2e57d4b29c3df793
   branch: gem
   specs:
     ffcrm_meta_search (1.0.1)
