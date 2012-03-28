@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/fat_free_crm.git
-  revision: 4e43aeb0462a87bdacfb38c2dcfa6dc27f736fd1
+  revision: a311bba2f7c776de75d0b00b3433d8b9e717111f
   branch: notifications
   specs:
     fat_free_crm (0.11.0)
@@ -328,7 +328,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.32)
-    uglifier (1.2.3)
+    uglifier (1.2.4)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
     unicorn (4.2.0)
