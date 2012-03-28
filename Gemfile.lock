@@ -135,6 +135,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    RedCloth (4.2.9)
     actionmailer (3.2.2)
       actionpack (= 3.2.2)
       mail (~> 2.4.0)
@@ -346,6 +347,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  RedCloth
   bundler_local_development
   chosen-rails!
   coffee-rails (~> 3.2.1)

@@ -13,6 +13,9 @@ gem 'ransack',      :git => "git://github.com/fatfreecrm/ransack.git"
 gem 'chosen-rails', :git => "git://github.com/fatfreecrm/chosen-rails.git"
 gem 'responds_to_parent', :git => "https://github.com/LessonPlanet/responds_to_parent.git"
 
+# Allow textile markup in emails and comments
+gem 'RedCloth'
+
 # Uncomment the database that you have configured in config/database.yml
 # ----------------------------------------------------------------------
 # gem 'mysql2', '0.3.10'
