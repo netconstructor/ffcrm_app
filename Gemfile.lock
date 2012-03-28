@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/fat_free_crm.git
-  revision: a311bba2f7c776de75d0b00b3433d8b9e717111f
+  revision: df06b9c19953922cfe72d218e7bfe7a7ae45774c
   branch: notifications
   specs:
     fat_free_crm (0.11.0)
@@ -53,6 +53,7 @@ GIT
       acts_as_list (~> 0.1.4)
       ajax-chosen-rails (>= 0.1.5)
       authlogic (~> 3.1.0)
+      cancan
       chosen-rails
       dynamic_form
       email_reply_parser
@@ -178,6 +179,7 @@ GEM
     builder (3.0.0)
     bundler_local_development (0.1.0)
       bundler
+    cancan (1.6.7)
     capistrano (2.11.2)
       highline
       net-scp (>= 1.0.0)
