@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/fat_free_crm.git
-  revision: 4a2e360192145eaf82478fefe566b73f46de9711
+  revision: 274d9b120e511641bd8fc6b8c8169ffc9390b24c
   branch: notifications
   specs:
     fat_free_crm (0.11.0)
