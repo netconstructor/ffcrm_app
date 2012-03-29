@@ -11,6 +11,14 @@ GIT
     crowd_rails (0.5.11)
 
 GIT
+  remote: git://github.com/crossroads/ffcrm_authlogic_api.git
+  revision: 9a7dabdf1101f3bb7d5fee0833d15a2d0ab1493b
+  specs:
+    ffcrm_authlogic_api (0.1.0)
+      authlogic
+      fat_free_crm
+
+GIT
   remote: git://github.com/crossroads/ffcrm_crossroads_formstack.git
   revision: 3c16e278adec172ef6f37621b0a581e1b14596d4
   branch: gem
@@ -355,6 +363,7 @@ DEPENDENCIES
   crowd-crossroads!
   crowd_rails!
   fat_free_crm!
+  ffcrm_authlogic_api!
   ffcrm_crossroads!
   ffcrm_crossroads_formstack!
   ffcrm_crowd!

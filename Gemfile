@@ -57,6 +57,8 @@ gem 'ffcrm_crossroads_formstack', :git => 'git://github.com/crossroads/ffcrm_cro
 
 gem 'ffcrm_meta_search',   :git => 'git://github.com/crossroads/ffcrm_meta_search.git', :branch => 'gem'
 
+gem 'ffcrm_authlogic_api', :git => 'git://github.com/crossroads/ffcrm_authlogic_api.git'
+
 gem 'hoptoad_notifier'
 gem 'whenever', '~> 0.7.0'
 gem 'crossroads_capistrano', '1.4.42', :group => :development
