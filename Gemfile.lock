@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: git://github.com/crossroads/ffcrm_meta_search.git
-  revision: deab0fedef6b5a4556f6bbeb2e57d4b29c3df793
+  revision: e8397eebddc231217dc1136cba66812b5067503b
   branch: gem
   specs:
     ffcrm_meta_search (1.0.1)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/fat_free_crm.git
-  revision: 8c411f04b3a8c24ff68429933e61234c8ccbc02b
+  revision: 4a2e360192145eaf82478fefe566b73f46de9711
   branch: notifications
   specs:
     fat_free_crm (0.11.0)
@@ -309,7 +309,7 @@ GEM
       ruby-debug-base19 (>= 0.11.19)
     ruby_core_source (0.1.5)
       archive-tar-minitar (>= 0.5.2)
-    rvm-capistrano (1.0.1)
+    rvm-capistrano (1.0.2)
       capistrano (>= 2.0.0)
     sass (3.1.15)
     sass-rails (3.2.5)
@@ -323,7 +323,7 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    therubyracer (0.9.10)
+    therubyracer (0.10.0)
       libv8 (~> 3.3.10)
     thor (0.14.6)
     tilt (1.3.3)
