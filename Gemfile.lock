@@ -103,7 +103,7 @@ GIT
 
 GIT
   remote: git://github.com/fatfreecrm/ffcrm_service_hooks.git
-  revision: 7a4a589438a61b6e6ff8e37a51ada02ea1a7af0b
+  revision: 777882996a505f05b616a26eaa9dc945b2e8baba
   specs:
     ffcrm_service_hooks (1.0.1)
       fat_free_crm
