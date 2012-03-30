@@ -1,17 +1,30 @@
 GIT
-  remote: git://github.com/crossroads/crowd.git
+  remote: git@bitbucket.org:crossroadsIT/ffcrm_crossroads.git
+  revision: 5933afc9d01254b64f822b37b836aed8479dcbce
+  specs:
+    ffcrm_crossroads (1.0.1)
+      fat_free_crm
+
+GIT
+  remote: https://github.com/LessonPlanet/responds_to_parent.git
+  revision: 1f0c6d82eda5e7f331a30fc029e7ead2a7dbdebf
+  specs:
+    responds_to_parent (1.0.20091013)
+
+GIT
+  remote: https://github.com/crossroads/crowd.git
   revision: 3b0da25cf2d57ac6e5633b5e601538eb1291c98c
   specs:
     crowd-crossroads (0.5.12)
 
 GIT
-  remote: git://github.com/crossroads/crowd_rails.git
+  remote: https://github.com/crossroads/crowd_rails.git
   revision: 371f57ee567bec9acfafc6e05b4bf25de568936e
   specs:
     crowd_rails (0.5.11)
 
 GIT
-  remote: git://github.com/crossroads/ffcrm_authlogic_api.git
+  remote: https://github.com/crossroads/ffcrm_authlogic_api.git
   revision: 8599f41419de7e8444b674290f8d4a77552580d6
   specs:
     ffcrm_authlogic_api (0.1.0)
@@ -19,29 +32,29 @@ GIT
       fat_free_crm
 
 GIT
-  remote: git://github.com/crossroads/ffcrm_crossroads_formstack.git
-  revision: dd0a6e5f7639fef9bbbb5bc02bbe0761885f5ad2
+  remote: https://github.com/crossroads/ffcrm_crossroads_formstack.git
+  revision: ea364b636e6f3cc2123db298b0b667ff1920fb8e
   specs:
     ffcrm_crossroads_formstack (1.0.1)
       fat_free_crm
       formstack
 
 GIT
-  remote: git://github.com/crossroads/ffcrm_meta_search.git
+  remote: https://github.com/crossroads/ffcrm_meta_search.git
   revision: e8397eebddc231217dc1136cba66812b5067503b
   specs:
     ffcrm_meta_search (1.0.1)
       fat_free_crm
 
 GIT
-  remote: git://github.com/crossroads/mingle4r.git
+  remote: https://github.com/crossroads/mingle4r.git
   revision: 1eb1401035f2089d4a9cd6e8e716f02cc59e0bfe
   specs:
     mingle4r (0.4.8)
       activeresource
 
 GIT
-  remote: git://github.com/fatfreecrm/chosen-rails.git
+  remote: https://github.com/fatfreecrm/chosen-rails.git
   revision: 33c92a8554ee14d11b7293eb531371a05c0a0b67
   specs:
     chosen-rails (0.9.5)
@@ -49,8 +62,8 @@ GIT
       thor (~> 0.14)
 
 GIT
-  remote: git://github.com/fatfreecrm/fat_free_crm.git
-  revision: 7e91dccd36d7ffd4d71fa6688f484141f90cbfd8
+  remote: https://github.com/fatfreecrm/fat_free_crm.git
+  revision: 3947f9757b599a347a70b1dc9faecc62cc5793c7
   branch: notifications
   specs:
     fat_free_crm (0.11.0)
@@ -78,29 +91,29 @@ GIT
       will_paginate (~> 3.0.2)
 
 GIT
-  remote: git://github.com/fatfreecrm/ffcrm_crowd.git
+  remote: https://github.com/fatfreecrm/ffcrm_crowd.git
   revision: 6b5d5cebdacda3a8c8fa9994bc14a87aca3c0f39
   specs:
     ffcrm_crowd (1.0.1)
       fat_free_crm
 
 GIT
-  remote: git://github.com/fatfreecrm/ffcrm_merge.git
+  remote: https://github.com/fatfreecrm/ffcrm_merge.git
   revision: fb78a42514df21f52f8e4aaaa9c378057f6d0d53
   specs:
     ffcrm_merge (1.2)
       fat_free_crm
 
 GIT
-  remote: git://github.com/fatfreecrm/ffcrm_mingle.git
-  revision: 8890609fa936bdf36fbb585f91b1ebb79ef6c69a
+  remote: https://github.com/fatfreecrm/ffcrm_mingle.git
+  revision: 4fd42368b5244efc4e65a8ec1a4c22e010f0e678
   specs:
     ffcrm_mingle (1.0.1)
       fat_free_crm
       mingle4r
 
 GIT
-  remote: git://github.com/fatfreecrm/ffcrm_service_hooks.git
+  remote: https://github.com/fatfreecrm/ffcrm_service_hooks.git
   revision: 760a9af612745a0131a71450230fd3343d04e81e
   specs:
     ffcrm_service_hooks (1.0.1)
@@ -109,7 +122,7 @@ GIT
       nestful
 
 GIT
-  remote: git://github.com/fatfreecrm/ransack.git
+  remote: https://github.com/fatfreecrm/ransack.git
   revision: 92f5812d4320e5f1959f844d19d0386bb5654a08
   specs:
     ransack (0.6.0)
@@ -119,24 +132,11 @@ GIT
       polyamorous (~> 0.5.0)
 
 GIT
-  remote: git://github.com/tribalvibes/soap4r-spox.git
+  remote: https://github.com/tribalvibes/soap4r-spox.git
   revision: 7e3cb897d7c0f5a0bc47fe6976610348cbd1f80a
   specs:
     soap4r (1.5.8.5)
       httpclient (>= 2.1.1)
-
-GIT
-  remote: git@bitbucket.org:crossroadsIT/ffcrm_crossroads.git
-  revision: 5933afc9d01254b64f822b37b836aed8479dcbce
-  specs:
-    ffcrm_crossroads (1.0.1)
-      fat_free_crm
-
-GIT
-  remote: https://github.com/LessonPlanet/responds_to_parent.git
-  revision: 1f0c6d82eda5e7f331a30fc029e7ead2a7dbdebf
-  specs:
-    responds_to_parent (1.0.20091013)
 
 GEM
   remote: https://rubygems.org/

@@ -7,10 +7,10 @@ begin
 rescue LoadError
 end
 
-gem 'fat_free_crm', :git => 'git://github.com/fatfreecrm/fat_free_crm.git', :branch => 'notifications'
+gem 'fat_free_crm', :git => 'https://github.com/fatfreecrm/fat_free_crm.git', :branch => 'notifications'
 
-gem 'ransack',      :git => "git://github.com/fatfreecrm/ransack.git"
-gem 'chosen-rails', :git => "git://github.com/fatfreecrm/chosen-rails.git"
+gem 'ransack',      :git => "https://github.com/fatfreecrm/ransack.git"
+gem 'chosen-rails', :git => "https://github.com/fatfreecrm/chosen-rails.git"
 gem 'responds_to_parent', :git => "https://github.com/LessonPlanet/responds_to_parent.git"
 
 # Allow textile markup in emails and comments
@@ -44,20 +44,20 @@ end
 # Gems used by Crossroads
 #------------------------
 
-gem 'mingle4r',            :git => 'git://github.com/crossroads/mingle4r.git'
-gem 'ffcrm_mingle',        :git => 'git://github.com/fatfreecrm/ffcrm_mingle.git'
+gem 'mingle4r',            :git => 'https://github.com/crossroads/mingle4r.git'
+gem 'ffcrm_mingle',        :git => 'https://github.com/fatfreecrm/ffcrm_mingle.git'
 
-gem 'ffcrm_merge',         :git => 'git://github.com/fatfreecrm/ffcrm_merge.git'
-gem 'ffcrm_service_hooks', :git => 'git://github.com/fatfreecrm/ffcrm_service_hooks.git'
+gem 'ffcrm_merge',         :git => 'https://github.com/fatfreecrm/ffcrm_merge.git'
+gem 'ffcrm_service_hooks', :git => 'https://github.com/fatfreecrm/ffcrm_service_hooks.git'
 
 gem 'formstack', '0.0.1'
 gem 'ffcrm_crossroads',    :git => 'git@bitbucket.org:crossroadsIT/ffcrm_crossroads.git'
 
-gem 'ffcrm_crossroads_formstack', :git => 'git://github.com/crossroads/ffcrm_crossroads_formstack.git'
+gem 'ffcrm_crossroads_formstack', :git => 'https://github.com/crossroads/ffcrm_crossroads_formstack.git'
 
-gem 'ffcrm_meta_search',   :git => 'git://github.com/crossroads/ffcrm_meta_search.git'
+gem 'ffcrm_meta_search',   :git => 'https://github.com/crossroads/ffcrm_meta_search.git'
 
-gem 'ffcrm_authlogic_api', :git => 'git://github.com/crossroads/ffcrm_authlogic_api.git'
+gem 'ffcrm_authlogic_api', :git => 'https://github.com/crossroads/ffcrm_authlogic_api.git'
 
 gem 'hoptoad_notifier'
 gem 'whenever', '~> 0.7.0'
@@ -68,8 +68,8 @@ group :production do
 end
 
 group :production, :staging do
-  gem 'soap4r',            :git => 'git://github.com/tribalvibes/soap4r-spox.git'
-  gem 'crowd-crossroads',  :git => 'git://github.com/crossroads/crowd.git'
-  gem 'crowd_rails',       :git => 'git://github.com/crossroads/crowd_rails.git'
-  gem 'ffcrm_crowd',       :git => 'git://github.com/fatfreecrm/ffcrm_crowd.git'
+  gem 'soap4r',            :git => 'https://github.com/tribalvibes/soap4r-spox.git'
+  gem 'crowd-crossroads',  :git => 'https://github.com/crossroads/crowd.git'
+  gem 'crowd_rails',       :git => 'https://github.com/crossroads/crowd_rails.git'
+  gem 'ffcrm_crowd',       :git => 'https://github.com/fatfreecrm/ffcrm_crowd.git'
 end
