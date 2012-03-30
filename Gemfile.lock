@@ -20,8 +20,7 @@ GIT
 
 GIT
   remote: git://github.com/crossroads/ffcrm_crossroads_formstack.git
-  revision: 11b29566e326d85b07f27a2845ba597e0c431de4
-  branch: gem
+  revision: dd0a6e5f7639fef9bbbb5bc02bbe0761885f5ad2
   specs:
     ffcrm_crossroads_formstack (1.0.1)
       fat_free_crm
@@ -30,7 +29,6 @@ GIT
 GIT
   remote: git://github.com/crossroads/ffcrm_meta_search.git
   revision: e8397eebddc231217dc1136cba66812b5067503b
-  branch: gem
   specs:
     ffcrm_meta_search (1.0.1)
       fat_free_crm

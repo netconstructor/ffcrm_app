@@ -53,9 +53,9 @@ gem 'ffcrm_service_hooks', :git => 'git://github.com/fatfreecrm/ffcrm_service_ho
 gem 'formstack', '0.0.1'
 gem 'ffcrm_crossroads',    :git => 'git@bitbucket.org:crossroadsIT/ffcrm_crossroads.git'
 
-gem 'ffcrm_crossroads_formstack', :git => 'git://github.com/crossroads/ffcrm_crossroads_formstack.git', :branch => 'gem'
+gem 'ffcrm_crossroads_formstack', :git => 'git://github.com/crossroads/ffcrm_crossroads_formstack.git'
 
-gem 'ffcrm_meta_search',   :git => 'git://github.com/crossroads/ffcrm_meta_search.git', :branch => 'gem'
+gem 'ffcrm_meta_search',   :git => 'git://github.com/crossroads/ffcrm_meta_search.git'
 
 gem 'ffcrm_authlogic_api', :git => 'git://github.com/crossroads/ffcrm_authlogic_api.git'
 
