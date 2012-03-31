@@ -66,7 +66,7 @@ GIT
   revision: 616c995af4c5c0b2cc66f2950de4c07ea6249182
   branch: notifications
   specs:
-    fat_free_crm (0.11.0)
+    fat_free_crm (0.11.1)
       acts-as-taggable-on (~> 2.2.1)
       acts_as_commentable (~> 3.0.1)
       acts_as_list (~> 0.1.4)
