@@ -63,7 +63,7 @@ GIT
 
 GIT
   remote: https://github.com/fatfreecrm/fat_free_crm.git
-  revision: 5b0b98590a74002ba9ae6f5eb41399ef35fdb9cf
+  revision: 1b245aefc3d82d60c6afcb5c1b2d65d691b7e35e
   branch: notifications
   specs:
     fat_free_crm (0.11.1)
@@ -238,7 +238,7 @@ GEM
     httpclient (2.2.4)
     i18n (0.6.0)
     journey (1.0.3)
-    jquery-rails (2.0.1)
+    jquery-rails (2.0.2)
       railties (>= 3.2.0, < 5.0)
       thor (~> 0.14)
     json (1.6.6)
