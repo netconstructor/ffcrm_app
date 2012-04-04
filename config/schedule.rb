@@ -11,7 +11,7 @@ def start_min_to_cron(start, interval = 10)
   ((start)..(start + 60)).step(interval).to_a.reject{|i| i > 59 }.join(',')
 end
 
-job_type :rake, "cd :path > /dev/null && RAILS_ENV=:environment bundle exec rake :task --silent :output"
+job_type :rake, "cd :path && RAILS_ENV=:environment bundle exec rake :task --silent :output"
 
 
 every "#{start_min_to_cron(5)} 7-23 * * *" do
@@ -27,4 +27,11 @@ end
 every "#{start_min_to_cron(0, 4)} * * * *" do
   # Comments Replies Inbox
   rake "ffcrm:comment_replies:run", :output => {:standard => "log/comment_replies_cron.log"}
+end
+
+
+every "0 * * * *" do
+  # Refresh cached volunteering statistics from Clockit
+  rake "ffcrm:crossroads:update_clockit_cache",
+       :output => {:standard => "log/clockit_cache_cron.log"}
 end

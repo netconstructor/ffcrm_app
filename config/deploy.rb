@@ -107,3 +107,10 @@ namespace :formstack do
     run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake ffcrm:crossroads:formstack:pull"
   end
 end
+
+namespace :clockit_cache do
+  desc "Update cached data from clockit"
+  task :default do
+    run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake ffcrm:crossroads:update_clockit_cache"
+  end
+end
