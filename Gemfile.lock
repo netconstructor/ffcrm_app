@@ -1,9 +1,10 @@
 GIT
   remote: git@bitbucket.org:crossroadsIT/ffcrm_crossroads.git
-  revision: 5933afc9d01254b64f822b37b836aed8479dcbce
+  revision: 97050e9ff80447fa0c59a0ab1d4bc860027650a4
   specs:
     ffcrm_crossroads (1.0.1)
       fat_free_crm
+      nestful
 
 GIT
   remote: https://github.com/LessonPlanet/responds_to_parent.git
@@ -33,7 +34,7 @@ GIT
 
 GIT
   remote: https://github.com/crossroads/ffcrm_crossroads_formstack.git
-  revision: ea364b636e6f3cc2123db298b0b667ff1920fb8e
+  revision: 89fb5a3111a99856e86a71af61fef202e80a87ae
   specs:
     ffcrm_crossroads_formstack (1.0.1)
       fat_free_crm
