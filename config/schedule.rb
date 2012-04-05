@@ -30,7 +30,7 @@ every "#{start_min_to_cron(0, 4)} * * * *" do
 end
 
 
-every "0 * * * *" do
+every "*/20 * * * *" do
   # Refresh cached volunteering statistics from Clockit
   rake "ffcrm:crossroads:update_clockit_cache",
        :output => {:standard => "log/clockit_cache_cron.log"}
