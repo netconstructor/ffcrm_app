@@ -7,7 +7,7 @@ begin
 rescue LoadError
 end
 
-gem 'fat_free_crm', :git => 'https://github.com/fatfreecrm/fat_free_crm.git', :branch => 'notifications'
+gem 'fat_free_crm', :git => 'https://github.com/fatfreecrm/fat_free_crm.git'
 
 gem 'ransack',      :git => "https://github.com/fatfreecrm/ransack.git"
 gem 'chosen-rails', :git => "https://github.com/fatfreecrm/chosen-rails.git"
