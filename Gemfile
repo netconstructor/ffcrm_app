@@ -36,8 +36,8 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'ruby-debug',   :platform => :mri_18
-  gem 'ruby-debug19', :platform => :mri_19, :require => 'ruby-debug'
+  gem 'ruby-debug', :platform => :mri_18
+  gem 'debugger',   :platform => :mri_19
 end
 
 
