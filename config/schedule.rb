@@ -21,7 +21,7 @@ end
 
 every "#{start_min_to_cron(3)} 7-23 * * *" do
   # Email dropbox
-  if Rails.env.to_s == 'production'
+  if environment == 'production'
     rake "ffcrm:dropbox:run", :output => {:standard => "log/dropbox_cron.log"}
   else
     rake "ffcrm:dropbox:run:dry", :output => {:standard => "log/dropbox_cron.log"}
@@ -30,7 +30,7 @@ end
 
 every "#{start_min_to_cron(0, 4)} * * * *" do
   # Comments Replies Inbox
-  if Rails.env.to_s == 'production'
+  if environment == 'production'
     rake "ffcrm:comment_replies:run", :output => {:standard => "log/comment_replies_cron.log"}
   else
     rake "ffcrm:comment_replies:run:dry", :output => {:standard => "log/comment_replies_cron.log"}
