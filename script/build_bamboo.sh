@@ -1,12 +1,12 @@
 #                Initialize environment
 # -----------------------------------------------------
 yum --quiet -y install `yum_bamboo_packages` # Install required yum packages
+ruby=`sed -e 's,rvm,,g' -e 's,use,,g' -e 's,\s,,g' .rvmrc`
 
 # Set up RVM environment
 # -----------------------------------------------------------------------
-#                         app_name   | ruby            | rubygems | bundler
-. setup_rvm_environment   ffcrm_app    ruby-1.9.2-p290   1.8.21     1.1.3
-#~ . setup_rvm_environment   ffcrm_app    ruby-1.9.3-p125   1.8.21     1.1.3
+#                         app_name   | ruby    | rubygems | bundler
+. setup_rvm_environment   ffcrm_app    "$ruby"   1.8.21     1.1.3
 
 RAILS_ENV=test
 plugins="ffcrm_mingle ffcrm_meta_search"
