@@ -5,7 +5,8 @@ yum --quiet -y install `yum_bamboo_packages` # Install required yum packages
 # Set up RVM environment
 # -----------------------------------------------------------------------
 #                         app_name   | ruby            | rubygems | bundler
-. setup_rvm_environment   ffcrm_app    ruby-1.9.3-p125   1.8.21     1.1.3
+. setup_rvm_environment   ffcrm_app    ruby-1.9.2-p290   1.8.21     1.1.3
+#~ . setup_rvm_environment   ffcrm_app    ruby-1.9.3-p125   1.8.21     1.1.3
 
 # Install bundled gems
 bundle install
