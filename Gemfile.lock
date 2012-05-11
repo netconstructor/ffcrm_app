@@ -7,12 +7,6 @@ GIT
       nestful
 
 GIT
-  remote: https://github.com/LessonPlanet/responds_to_parent.git
-  revision: 1f0c6d82eda5e7f331a30fc029e7ead2a7dbdebf
-  specs:
-    responds_to_parent (1.0.20091013)
-
-GIT
   remote: https://github.com/crossroads/crowd.git
   revision: 3b0da25cf2d57ac6e5633b5e601538eb1291c98c
   specs:
@@ -55,38 +49,31 @@ GIT
       activeresource
 
 GIT
-  remote: https://github.com/fatfreecrm/chosen-rails.git
-  revision: 33c92a8554ee14d11b7293eb531371a05c0a0b67
-  specs:
-    chosen-rails (0.9.5)
-      railties (~> 3.0)
-      thor (~> 0.14)
-
-GIT
   remote: https://github.com/fatfreecrm/fat_free_crm.git
-  revision: b1f80b1882e547400efc98c498d2171cf09dc73e
+  revision: eabf566ee439598e443aedc8198811bf232fe069
+  ref: eabf566ee439598e443aedc8198811bf232fe069
   specs:
-    fat_free_crm (0.11.1)
+    fat_free_crm (0.11.3)
       acts-as-taggable-on (~> 2.2.1)
       acts_as_commentable (~> 3.0.1)
       acts_as_list (~> 0.1.4)
-      ajax-chosen-rails (>= 0.1.5)
+      ajax-chosen-rails (>= 0.2.0)
       authlogic (~> 3.1.0)
       cancan
-      chosen-rails
+      chosen-rails_ffcrm
       dynamic_form
-      email_reply_parser
+      email_reply_parser_ffcrm
       ffaker (>= 1.12.0)
       haml (~> 3.1.3)
       jquery-rails
       nokogiri
       paper_trail
-      paperclip (~> 3.0.1)
+      paperclip (~> 2.7.0)
       premailer
       prototype-rails
       rails (~> 3.2.2)
-      ransack (~> 0.6.0)
-      responds_to_parent
+      ransack_ffcrm (~> 0.6.0)
+      responds_to_parent (>= 1.1.0)
       sass (~> 3.1.10)
       simple_form (~> 2.0.1)
       squeel (~> 0.9.3)
@@ -124,16 +111,6 @@ GIT
       nestful
 
 GIT
-  remote: https://github.com/fatfreecrm/ransack.git
-  revision: 92f5812d4320e5f1959f844d19d0386bb5654a08
-  specs:
-    ransack (0.6.0)
-      actionpack (~> 3.0)
-      activerecord (~> 3.0)
-      chronic (~> 0.6.7)
-      polyamorous (~> 0.5.0)
-
-GIT
   remote: https://github.com/tribalvibes/soap4r-spox.git
   revision: 7e3cb897d7c0f5a0bc47fe6976610348cbd1f80a
   specs:
@@ -141,7 +118,7 @@ GIT
       httpclient (>= 2.1.1)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     RedCloth (4.2.9)
     actionmailer (3.2.3)
@@ -174,10 +151,10 @@ GEM
     acts-as-taggable-on (2.2.2)
       rails (~> 3.0)
     acts_as_commentable (3.0.1)
-    acts_as_list (0.1.5)
-    addressable (2.2.7)
-    ajax-chosen-rails (0.1.5)
-      chosen-rails
+    acts_as_list (0.1.6)
+    addressable (2.2.8)
+    ajax-chosen-rails (0.2.0)
+      chosen-rails_ffcrm
       railties (~> 3.0)
       thor (~> 0.14)
     arel (3.0.2)
@@ -197,6 +174,9 @@ GEM
     capistrano-ext (1.2.1)
       capistrano (>= 1.0.0)
     capistrano_colors (0.5.5)
+    chosen-rails_ffcrm (0.9.5)
+      railties (~> 3.0)
+      thor (~> 0.14)
     chronic (0.6.7)
     cocaine (0.2.1)
     coffee-rails (3.2.2)
@@ -223,7 +203,7 @@ GEM
       debugger-ruby_core_source
     debugger-ruby_core_source (1.0.1)
     dynamic_form (1.1.4)
-    email_reply_parser (0.5.0)
+    email_reply_parser_ffcrm (0.5.0)
     erubis (2.7.0)
     execjs (1.3.0)
       multi_json (~> 1.0)
@@ -231,7 +211,7 @@ GEM
     formstack (0.0.1)
       hashie (>= 0.1.3)
       httparty (>= 0.1.0)
-    haml (3.1.4)
+    haml (3.1.5)
     hashie (1.2.0)
     highline (1.6.11)
     hike (1.2.1)
@@ -274,10 +254,9 @@ GEM
     paper_trail (2.6.3)
       activerecord (~> 3.0)
       railties (~> 3.0)
-    paperclip (3.0.1)
-      activemodel (>= 3.0.0)
-      activerecord (>= 3.0.0)
-      activesupport (>= 3.0.0)
+    paperclip (2.7.0)
+      activerecord (>= 2.3.0)
+      activesupport (>= 2.3.2)
       cocaine (>= 0.0.2)
       mime-types
     pg (0.12.2)
@@ -317,9 +296,15 @@ GEM
       thor (~> 0.14.6)
     raindrops (0.8.0)
     rake (0.9.2.2)
+    ransack_ffcrm (0.6.0)
+      actionpack (~> 3.0)
+      activerecord (~> 3.0)
+      chronic (~> 0.6.7)
+      polyamorous (~> 0.5.0)
     rbx-require-relative (0.0.9)
     rdoc (3.12)
       json (~> 1.4)
+    responds_to_parent (1.1.0)
     ruby-debug (0.10.4)
       columnize (>= 0.1)
       ruby-debug-base (~> 0.10.4.0)
@@ -333,7 +318,7 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    simple_form (2.0.1)
+    simple_form (2.0.2)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
     sprockets (2.1.2)
@@ -370,7 +355,6 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   bundler_local_development
-  chosen-rails!
   coffee-rails (~> 3.2.1)
   crossroads_capistrano (= 1.4.42)
   crowd-crossroads!
@@ -391,8 +375,6 @@ DEPENDENCIES
   newrelic_rpm (= 3.3.0)
   pg (~> 0.12.2)
   rails-erd
-  ransack!
-  responds_to_parent!
   ruby-debug
   sass-rails (~> 3.2.3)
   soap4r!

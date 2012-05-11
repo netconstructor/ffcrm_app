@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source :rubygems
 
 gem 'bundler_local_development', :group => :development, :require => false
 begin
@@ -7,11 +7,7 @@ begin
 rescue LoadError
 end
 
-gem 'fat_free_crm', :git => 'https://github.com/fatfreecrm/fat_free_crm.git'
-
-gem 'ransack',      :git => "https://github.com/fatfreecrm/ransack.git"
-gem 'chosen-rails', :git => "https://github.com/fatfreecrm/chosen-rails.git"
-gem 'responds_to_parent', :git => "https://github.com/LessonPlanet/responds_to_parent.git"
+gem 'fat_free_crm', :git => 'https://github.com/fatfreecrm/fat_free_crm.git', :ref => "eabf566ee439598e443aedc8198811bf232fe069"
 
 # Allow textile markup in emails and comments
 gem 'RedCloth'
