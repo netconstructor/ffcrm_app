@@ -31,13 +31,13 @@ do
     # replace fat_free_crm with version we want to run against
     sed -i 's/^gem '\''fat_free_crm'\'',/#/g' Gemfile
     echo "gem 'fat_free_crm', :git => 'https://github.com/fatfreecrm/fat_free_crm.git', :ref => '$ffcrm_version'" >> Gemfile
+    echo "######## Pegging fat_free_crm to $ffcrm_version"
   fi
   echo
   echo "#########################################################"
-  echo "   Running plugin tests in against fat_free_crm $TEST_ENV"
+  echo "   Running $plugin tests against fat_free_crm $TEST_ENV"
   echo "#########################################################"
   echo
-  rvm use $ruby
   bundle install
   bundle exec rake db:schema:load
   bundle exec rspec --require ci/reporter/rake/rspec_loader --format CI::Reporter::RSpec spec
