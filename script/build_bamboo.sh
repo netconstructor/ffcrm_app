@@ -38,6 +38,7 @@ do
   echo "   Running $plugin tests against fat_free_crm $TEST_ENV"
   echo "################################################################"
   echo
+  . setup_rvm_environment   ffcrm_app    "$ruby"   1.8.21     1.1.3
   bundle install
   bundle exec rake db:schema:load
   bundle exec rspec --require ci/reporter/rake/rspec_loader --format CI::Reporter::RSpec spec
