@@ -27,16 +27,16 @@ do
   cd $plugin
   if [ "$TEST_ENV" != "origin" ]; then
     # Grab the revision of fat_free_crm from Gemfile.lock to peg the plugin to
-    ffcrm_version=`grep -A 1 "https://github.com/fatfreecrm/fat_free_crm.git" ../Gemfile.lock | grep "revision"| cut -d ' ' -f4`
+    ffcrm_version=`grep -A 1 "fatfreecrm/fat_free_crm.git" ../Gemfile.lock | grep "revision"| cut -d ' ' -f4`
     # replace fat_free_crm with version we want to run against
     sed -i 's/^gem '\''fat_free_crm'\'',/#/g' Gemfile
-    echo "gem 'fat_free_crm', :git => 'https://github.com/fatfreecrm/fat_free_crm.git', :ref => '$ffcrm_version'" >> Gemfile
-    echo "######## Pegging fat_free_crm to $ffcrm_version"
+    echo "gem 'fat_free_crm', :git => 'git://github.com/fatfreecrm/fat_free_crm.git', :ref => '$ffcrm_version'" >> Gemfile
+    echo "Pegging fat_free_crm to $ffcrm_version"
   fi
   echo
-  echo "#########################################################"
+  echo "################################################################"
   echo "   Running $plugin tests against fat_free_crm $TEST_ENV"
-  echo "#########################################################"
+  echo "################################################################"
   echo
   bundle install
   bundle exec rake db:schema:load
