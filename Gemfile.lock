@@ -95,7 +95,7 @@ GIT
 
 GIT
   remote: https://github.com/fatfreecrm/ffcrm_mingle.git
-  revision: 4fd42368b5244efc4e65a8ec1a4c22e010f0e678
+  revision: 8fbac61f32d4f2e5d38a7eb86c930353f65af537
   specs:
     ffcrm_mingle (1.0.1)
       fat_free_crm
