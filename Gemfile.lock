@@ -42,13 +42,6 @@ GIT
       fat_free_crm
 
 GIT
-  remote: https://github.com/crossroads/mingle4r.git
-  revision: 1eb1401035f2089d4a9cd6e8e716f02cc59e0bfe
-  specs:
-    mingle4r (0.4.8)
-      activeresource
-
-GIT
   remote: https://github.com/fatfreecrm/fat_free_crm.git
   revision: eabf566ee439598e443aedc8198811bf232fe069
   ref: eabf566ee439598e443aedc8198811bf232fe069
@@ -95,7 +88,7 @@ GIT
 
 GIT
   remote: https://github.com/fatfreecrm/ffcrm_mingle.git
-  revision: 8fbac61f32d4f2e5d38a7eb86c930353f65af537
+  revision: df21c9382faf2ae463e147a4f741e63ddf706dc4
   specs:
     ffcrm_mingle (1.0.1)
       fat_free_crm
@@ -238,6 +231,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.18)
+    mingle4r (0.4.8)
+      activeresource
     multi_json (1.2.0)
     multi_xml (0.4.2)
     nestful (0.0.8)
@@ -371,7 +366,6 @@ DEPENDENCIES
   ffcrm_service_hooks!
   formstack (= 0.0.1)
   hoptoad_notifier
-  mingle4r!
   newrelic_rpm (= 3.3.0)
   pg (~> 0.12.2)
   rails-erd

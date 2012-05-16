@@ -40,7 +40,6 @@ end
 # Gems used by Crossroads
 #------------------------
 
-gem 'mingle4r',            :git => 'https://github.com/crossroads/mingle4r.git'
 gem 'ffcrm_mingle',        :git => 'https://github.com/fatfreecrm/ffcrm_mingle.git'
 
 gem 'ffcrm_merge',         :git => 'https://github.com/fatfreecrm/ffcrm_merge.git'
