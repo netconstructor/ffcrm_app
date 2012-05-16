@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/crossroads/mingle4r.git
+  revision: 1eb1401035f2089d4a9cd6e8e716f02cc59e0bfe
+  specs:
+    mingle4r (0.4.8)
+      activeresource
+
+GIT
   remote: git@bitbucket.org:crossroadsIT/ffcrm_crossroads.git
   revision: f24c83fa00af9eef952bb04af94df21dba4417e0
   specs:
@@ -231,8 +238,6 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.18)
-    mingle4r (0.4.8)
-      activeresource
     multi_json (1.2.0)
     multi_xml (0.4.2)
     nestful (0.0.8)
@@ -366,6 +371,7 @@ DEPENDENCIES
   ffcrm_service_hooks!
   formstack (= 0.0.1)
   hoptoad_notifier
+  mingle4r!
   newrelic_rpm (= 3.3.0)
   pg (~> 0.12.2)
   rails-erd
