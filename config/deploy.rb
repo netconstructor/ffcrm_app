@@ -19,10 +19,10 @@ set :yum_packages,       %w(ImageMagick-devel libxml2 libxml2-devel libxslt libx
 set :default_stage,      "staging"
 set :normalize_asset_timestamps, false
 
-after  "shared:setup",   "ffcrm:shared:setup"
-before "deploy:symlink", "ffcrm:shared:symlink"
-before "deploy:symlink", "dropbox:create_log"
-after  "ffcrm:setup",    "ffcrm:crossroads:seed"
+after "shared:setup",       "ffcrm:shared:setup"
+after "deploy:update_code", "ffcrm:shared:symlink"
+after "deploy:update_code", "dropbox:create_log"
+after "ffcrm:setup",        "ffcrm:crossroads:seed"
 
 namespace :ffcrm do
   namespace :shared do

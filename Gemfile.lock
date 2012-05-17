@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/crossroads/crossroads_capistrano.git
+  revision: e6822b70f69bde8ae6c15b3e268be02256164636
+  specs:
+    crossroads_capistrano (1.4.42)
+      capistrano (>= 2.6.0)
+      capistrano-ext (>= 1.2.1)
+      capistrano_colors (>= 0.5.4)
+      rvm-capistrano (>= 1.0.1)
+
+GIT
   remote: git://github.com/crossroads/mingle4r.git
   revision: 1eb1401035f2089d4a9cd6e8e716f02cc59e0bfe
   specs:
@@ -165,7 +175,7 @@ GEM
     bundler_local_development (0.3.0)
       bundler
     cancan (1.6.7)
-    capistrano (2.11.2)
+    capistrano (2.12.0)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
@@ -187,11 +197,6 @@ GEM
       execjs
     coffee-script-source (1.3.1)
     columnize (0.3.6)
-    crossroads_capistrano (1.4.42)
-      capistrano (>= 2.6.0)
-      capistrano-ext (>= 1.2.1)
-      capistrano_colors (>= 0.5.4)
-      rvm-capistrano (>= 1.0.1)
     css_parser (1.2.6)
       addressable
       rdoc
@@ -213,7 +218,7 @@ GEM
       httparty (>= 0.1.0)
     haml (3.1.5)
     hashie (1.2.0)
-    highline (1.6.11)
+    highline (1.6.12)
     hike (1.2.1)
     hoptoad_notifier (2.4.11)
       activesupport
@@ -311,7 +316,7 @@ GEM
     ruby-debug-base (0.10.4)
       linecache (>= 0.3)
     ruby-graphviz (0.9.21)
-    rvm-capistrano (1.0.2)
+    rvm-capistrano (1.1.0)
       capistrano (>= 2.0.0)
     sass (3.1.15)
     sass-rails (3.2.5)
@@ -356,7 +361,7 @@ DEPENDENCIES
   RedCloth
   bundler_local_development
   coffee-rails (~> 3.2.1)
-  crossroads_capistrano (= 1.4.42)
+  crossroads_capistrano!
   crowd-crossroads!
   crowd_rails!
   debugger

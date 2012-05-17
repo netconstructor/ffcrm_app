@@ -57,7 +57,7 @@ gem 'ffcrm_authlogic_api', :git => 'https://github.com/crossroads/ffcrm_authlogi
 
 gem 'hoptoad_notifier'
 gem 'whenever', '~> 0.7.0'
-gem 'crossroads_capistrano', '1.4.42', :group => :development
+gem 'crossroads_capistrano', :git => 'git://github.com/crossroads/crossroads_capistrano.git', :group => :development
 gem 'rails-erd', :group => :development
 
 group :production do
