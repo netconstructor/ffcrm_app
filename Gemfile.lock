@@ -60,8 +60,8 @@ GIT
 
 GIT
   remote: https://github.com/fatfreecrm/fat_free_crm.git
-  revision: 71bb7cb97b37104707d440680ca38cbe8a65e963
-  ref: 71bb7cb97b37104707d440680ca38cbe8a65e963
+  revision: aa69a66d02d9f3af0b5fe98e192720c69d8c32e2
+  ref: aa69a66d02d9f3af0b5fe98e192720c69d8c32e2
   specs:
     fat_free_crm (0.11.3)
       acts-as-taggable-on (~> 2.2.1)
